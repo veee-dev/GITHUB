@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kay Exchange</title>
+  <link rel="stylesheet" href="index.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="image/Kay xchange (1).png"  width="100px" height="40px"  alt="Kay Exchange">                                                                                                                       
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Track Exchange Rates Instantly</h1>
+      <p>Get real-time conversion updates across major currencies.</p>
+      <a href="#converter" class="cta">Check Rates Now</a>
+    </div>
+  </section>
+
+  <section class="converter" id="converter">
+    <h2>Currency Converter</h2>
+    <form>
+      <input type="number" placeholder="Enter amount" />
+      <select>
+        <option>USD</option>
+        <option>EUR</option>
+        <option>NGN</option>
+      </select>
+      <span>to</span>
+      <select>
+        <option>NGN</option>
+        <option>USD</option>
+        <option>EUR</option>
+      </select>
+      <button type="submit">Convert</button>
+    </form>
+  </section>
+
+  <section class="features">
+    <h2>Why Choose Us?</h2>
+    <div class="feature-list">
+      <div class="feature">🔄 Real-time updates</div>
+      <div class="feature">💱 Over 150 currencies</div>
+      <div class="feature">📊 Historical rate charts</div>
+      <div class="feature">📲 Mobile friendly</div>
+    </div>
+  </section>
+  
+  <!-- HTML CODES FOR FOOTER SECTION-->
+    <div class="footer">
+        <div class="footer-menus">
+         <a href="">Home</a>
+         <a href="">About Us</a>
+         <a href="">Services</a>
+         <a href="">Converter</a>
+         <a href="">Contact</a>
+        <p>© copyright 2025. all rights reserved. Powered by DesDev Ltd</p>
+        
+        <!-- HTML CODES FOR FONT AWESOME-->
+        <div class="icon-bar">
+            <a href="" class="facebook"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="" class="pintrest"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+
+  <script>
+    // Hamburger menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.querySelector('nav');
+
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
